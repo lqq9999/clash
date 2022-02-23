@@ -1,4 +1,3 @@
-# 将proxy-providers里面链接中的“你的订阅链接”全部替换即可
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -12,7 +11,7 @@ proxy-providers:
   #全部节点
   All:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=你的订阅链接&list=true&udp=true"
+    url: "https://api.v1.mk/sub?target=clash&url=https://sub.v6mc.xyz/api/v1/client/subscribe?token=4f869cfbf61c3620fa6cad951ecb1283&list=true&udp=true"
     interval: 3600
     path: ./all.yaml
     health-check:
@@ -23,7 +22,7 @@ proxy-providers:
   #美国节点    
   US:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=你的订阅链接&list=true&udp=true&include=(?=.*(美|🇺🇲|US|(?i)States|American))"
+    url: "https://api.v1.mk/sub?target=clash&url=https://sub.v6mc.xyz/api/v1/client/subscribe?token=4f869cfbf61c3620fa6cad951ecb1283&list=true&udp=true&include=(?=.*(美|????|US|(?i)States|American))"
     interval: 3600
     path: ./us.yaml
     health-check:
@@ -34,7 +33,7 @@ proxy-providers:
   #香港节点
   HK:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=你的订阅链接&list=true&udp=true&include=(?=.*(港|🇭🇰|HK|(?i)Hong))"
+    url: "https://api.v1.mk/sub?target=clash&url=https://sub.v6mc.xyz/api/v1/client/subscribe?token=4f869cfbf61c3620fa6cad951ecb1283&list=true&udp=true&include=(?=.*(港|????|HK|(?i)Hong))"
     interval: 3600
     path: ./hk.yaml
     health-check:
@@ -45,7 +44,7 @@ proxy-providers:
   #日本节点
   JP:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=你的订阅链接&list=true&udp=true&include=(?=.*(日|🇯🇵|东京|JP|(?i)Japan))"
+    url: "https://api.v1.mk/sub?target=clash&url=https://sub.v6mc.xyz/api/v1/client/subscribe?token=4f869cfbf61c3620fa6cad951ecb1283&list=true&udp=true&include=(?=.*(日|????|东京|JP|(?i)Japan))"
     interval: 3600
     path: ./jp.yaml
     health-check:
@@ -56,7 +55,7 @@ proxy-providers:
   #韩国节点
   KR:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=你的订阅链接&list=true&udp=true&include=(?=.*(韩|🇰🇷|首尔|KR|(?i)Korea))"
+    url: "https://api.v1.mk/sub?target=clash&url=https://sub.v6mc.xyz/api/v1/client/subscribe?token=4f869cfbf61c3620fa6cad951ecb1283&list=true&udp=true&include=(?=.*(韩|????|首尔|KR|(?i)Korea))"
     interval: 3600
     path: ./kr.yaml
     health-check:
@@ -67,7 +66,7 @@ proxy-providers:
  #台湾节点
   TW:
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=你的订阅链接&list=true&udp=true&include=(?=.*(台|🇨🇳|🇹🇼|湾|TW|(?i)Taiwan))"
+    url: "https://api.v1.mk/sub?target=clash&url=https://sub.v6mc.xyz/api/v1/client/subscribe?token=4f869cfbf61c3620fa6cad951ecb1283&list=true&udp=true&include=(?=.*(台|????|????|湾|TW|(?i)Taiwan))"
     interval: 3600
     path: ./tw.yaml
     health-check:
