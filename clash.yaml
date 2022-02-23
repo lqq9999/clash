@@ -73,17 +73,6 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-      
-#网易云音乐
- Music:
-    type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/AgentNode/NeteaseMusicUnlock.list&list=true&udp=true"
-    interval: 3600
-    path: ./Music.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
 
 dns:
   enable: true
@@ -246,12 +235,9 @@ proxy-groups:
 
   - name: 网易音乐
     type: select
-    use:
-  - Music
-  url: 'http://www.gstatic.com/generate_204'
-    interval: 7200
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music.png
-    proxies: []
+    proxies:
+      - DIRECT
 
   - name: 哔哩哔哩
     type: select
