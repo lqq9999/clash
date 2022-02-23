@@ -343,13 +343,15 @@ proxy-groups:
     proxies:
       - DIRECT
       
-  - name: Music
-    type: select
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
-    use:
-      - Music
-    proxies:
-      - DIRECT
+- name: Music
+  type: select
+  use:
+  - Music
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 7200
+  icon: https://raw.githubusercontent.com/Orz-3/face/master/Netease.png
+  proxies: []
+  
 
 rule-providers:
 
